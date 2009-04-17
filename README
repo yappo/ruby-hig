@@ -1,0 +1,44 @@
+# hig.rb
+
+this scripts need net-irc ( http://svn.coderepos.org/share/lang/ruby/net-irc )
+
+## Launch
+
+	$ ruby hig.rb
+
+If you want to help:
+
+	$ ruby hig.rb --help
+
+## Configuration
+
+Options specified by after irc realname.
+
+Configuration example for Tiarra ( http://coderepos.org/share/wiki/Tiarra ).
+
+	wassr {
+		host: localhost
+		port: 16672
+		name: hatena-id
+		in-encoding: utf8
+		out-encoding: utf8
+	}
+
+### athack
+
+If `athack` client option specified,
+all nick in join message is leading with @.
+
+So if you complemente nicks (e.g. Irssi),
+it's good for Twitter like reply command (@nick).
+
+In this case, you will see torrent of join messages after connected,
+because NAMES list can't send @ leading nick (it interpreted op.)
+
+### ratio=<timeline>:<friends>:<channel>
+
+## License
+
+yappo
+
+base code by cho45 (wig.rb)
